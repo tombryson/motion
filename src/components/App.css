@@ -1,20 +1,69 @@
-.box {
-  height: 15vw;
-  width: 15vw;
+.project-container {
+  height: 28vh;
+  min-height: 220px;
+  min-width: 380px;
+  width: 38vw;
+  /* border: solid black 4px; */
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  margin: 6%;
+  display: block;
+}
+
+.project-underlay {
+  height: 10vw;
+  min-height: 220px;
+  min-width: 310px;
+  width: 24vw;
+  left: 3vw;
+  top: 4vh;
+  z-index: -1;
+  border: solid black 4px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 1%;  
+  margin: 8%;
+  position: absolute;
+}
+
+.project-overlay {
+  height: 15vh;
+  min-height: 240px;
+  min-width: 300px;
+  width: 25vw;
   border: solid black 4px;
   border-radius: 10px;
   background-color: pink;
-  color: white;
+  z-index: 10;
+  color: rgb(0, 0, 0);
   padding: 1%;  
-  margin: 8vh;
-  display: block;
-  text-align: center;
+  margin: 8%;
   justify-content: center;
+  position: absolute;
 }
 
-.tictactoe {
-  content:"this is tictactoe";
-  color: black;
-  height: 50px;
+.burning-airlines {
+  /* background-color: green; */
+  background-image: URL('https://wallpapercave.com/wp/wp4080178.jpg');
+}
+
+.burning-airlines::after {
+  content:"this is burning airlines";                        
+  background-image: URL('../images/burning-airlines.jpg');
   width: 50px;
+  height: 50px;
+}
+
+
+.brain-train::after {
+  content:"this is braintrain";
+}
+
+.tapedeck::after {
+  content:"this is tapedeck";
+}
+
+.tictactoe::after {
+  content:"this is tictactoe";
 }
